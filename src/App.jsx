@@ -1242,7 +1242,12 @@ const Navbar = ({ activePage, setActivePage }) => {
                 className="w-full mt-4 text-white px-6 py-4 rounded-xl font-bold"
                 style={{ backgroundImage: THEME_GRADIENT }}
               >
-                Booking Now
+                <a
+                  href="https://api.whatsapp.com/send?phone=918759417243&text=hi"
+                  target="blank"
+                >
+                  Booking Now
+                </a>
               </button>
             </div>
           </motion.div>
