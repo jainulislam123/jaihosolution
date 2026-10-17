@@ -1,0 +1,8 @@
+{
+  "name": "Jaiho Solution - Digital Solutions Agency",
+  "description": "Transform your vision into digital reality with cutting-edge software, cloud ecosystems, and AI-driven platforms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
