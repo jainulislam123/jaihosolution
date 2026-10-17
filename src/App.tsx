@@ -20,7 +20,7 @@ const socialLinks = [
 const THEME_COLOR = "#45bdb5";
 const THEME_GRADIENT = "linear-gradient(135deg, #45bdb5 0%, #32a89f 50%, #c6ea0f 100%)";
 const THEME_GRADIENT_HOVER = "linear-gradient(135deg, #c6ea0f 0%, #32a89f 50%, #45bdb5 100%)";
-const DARK_BG_COLOR = "#0B1120";
+const DARK_BG_COLOR = "#0B0020";
 
 interface ModalProps {
   isOpen: boolean;
@@ -987,11 +987,14 @@ const Hero = ({
       {/* Background imagery with subtle overlay */}
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2000&auto=format&fit=crop"
-          alt="Digital Engineering Workspace"
-          className="w-full h-full object-cover opacity-25"
+          src="https://i.postimg.cc/xjNRKNWw/wmremove-transformed.jpg"
+          alt="AI Digital Network Background"
+          className="w-full h-full object-cover opacity-70"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2000&auto=format&fit=crop";
+          }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0B1120]/70 via-[#0B1120]/90 to-[#0B1120]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0B0020]/20 via-[#0B0020]/40 to-[#0B0020]/90" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
